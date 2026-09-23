@@ -1,0 +1,7 @@
+# Configuration example only. Merge this section into your Codex MCP config.
+# If setup.cmd was used, command can point to .venv/Scripts/python.exe instead.
+[mcp_servers.msx_pixel_studio]
+command = "C:/path/to/9918-studio/.venv/Scripts/python.exe"
+args = ["C:/path/to/9918-studio/mcp_server.py"]
+startup_timeout_sec = 10
+tool_timeout_sec = 180

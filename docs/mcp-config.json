@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "msx-pixel-studio": {
+      "command": "C:/path/to/9918-studio/.venv/Scripts/python.exe",
+      "args": ["C:/path/to/9918-studio/mcp_server.py"]
+    }
+  }
+}
