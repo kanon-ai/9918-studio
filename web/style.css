@@ -68,3 +68,5 @@ header nav button{background:linear-gradient(#3d4549,#282e32);border:1px solid #
 #overviewSelection{position:absolute;pointer-events:none;z-index:2;border:2px solid #b7e0fc;box-shadow:inset 0 0 0 1px #142939}#overviewImage .tile-choice.active{outline:none}
 
 .canvas-dock #partColorPanel .mode-specific{max-height:260px;overflow:auto;padding:8px 0}.canvas-dock #partColorPanel .mode-color-row select{width:76px;font-size:11px}.canvas-dock #partColorPanel .mode-color-row{font-size:11px;gap:3px}.canvas-dock #partColorPanel .mode-color-row>span{min-width:28px}
+
+.input-mode{display:flex;align-items:center;gap:8px;margin-bottom:8px;font-size:12px}.input-mode select{flex:1;min-width:0}#rightColorInfo{font-size:11px;margin:5px 0;color:#b8e1fd}#importX,#importY{width:76px}#importPreview{cursor:grab;touch-action:none}#importPreview:active{cursor:grabbing}
