@@ -17,7 +17,7 @@ def main():
     for folder in ('web','docs','tests','examples','licenses'):
         files.extend(p for p in (ROOT/folder).rglob('*') if p.is_file() and '__pycache__' not in p.parts)
     dist=ROOT/'dist';dist.mkdir(exist_ok=True)
-    target=dist/'MSX-Pixel-Studio-1.0.2.zip'
+    target=dist/'MSX-Pixel-Studio-1.0.3.zip'
     manifest={str(p.relative_to(ROOT)).replace('\\','/'):hashlib.sha256(p.read_bytes()).hexdigest() for p in files}
     with zipfile.ZipFile(target,'w',zipfile.ZIP_DEFLATED) as z:
         for p in files:z.write(p,'MSX-Pixel-Studio/'+str(p.relative_to(ROOT)))

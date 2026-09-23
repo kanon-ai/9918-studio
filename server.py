@@ -135,7 +135,7 @@ class Handler(BaseHTTPRequestHandler):
         try:
             self.guard(); u=urlparse(self.path); q=parse_qs(u.query); path=u.path
             with self.server.store.lock:
-                if path=='/api/health':return self.respond(dict(application='msx-pixel-studio',version='1.0.2'))
+                if path=='/api/health':return self.respond(dict(application='msx-pixel-studio',version='1.0.3'))
                 if path=='/api/session':return self.respond(dict(token=self.server.token,revision=self.server.store.rev))
                 if path=='/api/modes':return self.respond(dict(chips=core.CHIPS,modes=list(core.MODES.values())))
                 if path=='/api/state':
