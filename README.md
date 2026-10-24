@@ -135,3 +135,12 @@ node --check web/app.js
 画像取り込みの未確定プレビューはドラッグ、または位置X/Yの数値指定で移動できます。「中央に戻す」でオフセットをリセットします。確定までは原画を変更しません。
 
 全体編集も編集範囲の選択肢から選べます。256×192の素材なら「256×192編集（全体）」と表示し、「全体を編集」ボタンと連動します。「部品を描く」で直前の部品編集サイズに戻ります。
+
+
+## Node.js security update (2026-10-24)
+
+Node.jsを使う開発・検証ツールには **22.23.4** を推奨します。24系を使う場合は **24.22.1以上**、26系は **26.12.1以上**を使用してください。Node.js本体は同梱していません。既存のNode.js環境は別途更新し、起動中のNode.jsプロセスを再起動してください。
+
+For Node.js-based development and validation tools, use **22.23.4** (the repository default), **24.22.1 or later in the 24.x line**, or **26.12.1 or later in the 26.x line**. Update your separately installed Node.js runtime and restart existing Node.js processes.
+
+[Node.js security release details](https://nodejs.org/en/blog/vulnerability/october-2026-security-releases)
